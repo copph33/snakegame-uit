@@ -122,8 +122,17 @@ this.addKeyListener(new myKeyAdapter());
     }
 
     public void gameOver(Graphics g) {
-        ////GameOver
-    }
+		//Score
+		g.setColor(Color.red);
+		g.setFont( new Font("Ink Free",Font.BOLD, 40));
+		FontMetrics metrics1 = getFontMetrics(g.getFont());
+		g.drawString("Score: "+ appleEaten, (SCREEN_WIDTH - metrics1.stringWidth("Score: "+ appleEaten))/2, g.getFont().getSize());
+		//Game Over text
+		g.setColor(Color.red);
+		g.setFont( new Font("Ink Free",Font.BOLD, 75));
+		FontMetrics metrics2 = getFontMetrics(g.getFont());
+		g.drawString("Game Over", (SCREEN_WIDTH - metrics2.stringWidth("Game Over"))/2, SCREEN_HEIGHT/2);
+	}
 
     @Override
     public void actionPerformed(ActionEvent e) {
