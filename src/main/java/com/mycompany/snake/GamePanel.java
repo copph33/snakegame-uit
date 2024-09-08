@@ -112,15 +112,7 @@ this.addKeyListener(new myKeyAdapter());
 			newApple();
 		}
     }
-
-    public void checkCollisions() {
-        for (int i = bodyParts; i > 0; i--) {
-            if (x[0] == x[i] && y[0] == y[i]) {
-                running = false;
-            }
-        }
-    }
-
+    // them function
     public void checkCollisions() {
 		//checks if head collides with body
 		for(int i = bodyParts;i>0;i--) {
