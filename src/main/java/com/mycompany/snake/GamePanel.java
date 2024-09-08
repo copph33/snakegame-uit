@@ -113,6 +113,7 @@ this.addKeyListener(new myKeyAdapter());
 		}
     }
     // them function
+    // thay doi email
     public void checkCollisions() {
 		//checks if head collides with body
 		for(int i = bodyParts;i>0;i--) {
