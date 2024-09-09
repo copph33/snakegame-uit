@@ -112,38 +112,18 @@ this.addKeyListener(new myKeyAdapter());
 			newApple();
 		}
     }
-    // them function
-    // thay doi email
+
     public void checkCollisions() {
-		//checks if head collides with body
-		for(int i = bodyParts;i>0;i--) {
-			if((x[0] == x[i])&& (y[0] == y[i])) {
-				running = false;
-			}
-		}
-		//check if head touches left border
-		if(x[0] < 0) {
-			running = false;
-		}
-		//check if head touches right border
-		if(x[0] > SCREEN_WIDTH) {
-			running = false;
-		}
-		//check if head touches top border
-		if(y[0] < 0) {
-			running = false;
-		}
-		//check if head touches bottom border
-		if(y[0] > SCREEN_HEIGHT) {
-			running = false;
-		}
-		
-		if(!running) {
-			timer.stop();
-		}
-	}
+        for (int i = bodyParts; i > 0; i--) {
+            if (x[0] == x[i] && y[0] == y[i]) {
+                running = false;
+            }
+        }
+    }
+
     public void gameOver(Graphics g) {
 		//Score
+        // Khoi edit 
 		g.setColor(Color.red);
 		g.setFont( new Font("Ink Free",Font.BOLD, 40));
 		FontMetrics metrics1 = getFontMetrics(g.getFont());
@@ -195,3 +175,5 @@ this.addKeyListener(new myKeyAdapter());
         }
     }
 }
+
+//da test can them hien thi thong bao Game Over
