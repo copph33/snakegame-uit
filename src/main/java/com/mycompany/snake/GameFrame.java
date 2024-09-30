@@ -6,7 +6,7 @@ package com.mycompany.snake;
 
 /**
  *
- * @author Admin
+ * @author UIT news
  */
 import javax.swing.JFrame;
 

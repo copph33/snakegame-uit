@@ -6,8 +6,9 @@ package com.mycompany.snake;
 
 /**
  *
- * @author Admin
+ * @author UIT
  */
+//change
 public class Snake {
 
     public static void main(String[] args) {
